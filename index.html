@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sai Venkata Karthik Bachu</h1>
+            <p>Computer Science Student | ML Enthusiast | Developer</p>
+            <a href="#about" class="cta-btn">Discover My Work</a>
+        </div>
+        <!-- Particles -->
+        <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+        <div class="particle" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
+        <div class="particle" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+        <div class="particle" style="top: 30%; left: 50%; animation-delay: 4s;"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-particles"></div>
+        <div class="about-content">
+            <div class="about-image">👨‍💻</div>
+            <div class="about-text">
+                <p>I'm a motivated Computer Science student from VIT-AP with expertise in Java, Python, and C++. I love solving problems and building practical software solutions, backed by a strong foundation in Data Structures, Algorithms, and Machine Learning.</p>
+                <p>I’ve contributed to impactful projects and collaborated with tech clubs to organize workshops, research ML datasets, and propose improvements to our university portal.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills fade-in">
+        <div class="section-particles"></div>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-icon">🧠</div>
+                <h3>Languages</h3>
+                <p>Java, Python, C++, SQL</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🛠️</div>
+                <h3>Tools</h3>
+                <p>Git, Selenium, Scikit-learn, Pandas</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">📘</div>
+                <h3>Concepts</h3>
+                <p>DSA, Machine Learning, OOPS</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🗃️</div>
+                <h3>Databases</h3>
+                <p>MySQL, PostgreSQL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3 class="project-title">BigMart Sales Prediction</h3>
+                    <p>Built an ML model using Scikit-learn to predict sales with 85% accuracy, enhancing inventory management.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">💬</div>
+                <div class="project-info">
+                    <h3 class="project-title">Encrypted Chat App</h3>
+                    <p>Secure multi-client chat using Java sockets and AES encryption with real-time communication.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-info">
+                    <h3 class="project-title">Security Home Bot (Group Project)</h3>
+                    <p>Autonomous robot with obstacle detection, line tracking, and real-time serial communication (C++ & Arduino).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="projects fade-in">
+        <h2 class="section-title">Certifications</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">📚</div>
+                <div class="project-info">
+                    <h3 class="project-title">Introduction to Data Analytics</h3>
+                    <p>Coursera (2025)</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3 class="project-title">Data Visualization with Excel & Cognos</h3>
+                    <p>Coursera (2025)</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">⚙️</div>
+                <div class="project-info">
+                    <h3 class="project-title">Selenium Automation Testing</h3>
+                    <p>Edureka (2025)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <div class="section-particles"></div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem;">Feel free to reach out to collaborate or chat tech!</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
